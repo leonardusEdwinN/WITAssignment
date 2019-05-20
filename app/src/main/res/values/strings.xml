@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WITAssignmentTask</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_category">Category</string>
+
+    <string name="splash_image">HOME IMAGE</string>
+
+    <string name="home_image">HOME IMAGE</string>
+    <string name="home_name">HOME BLOCK</string>
+
+    <string name="product_image">PRODUCT IMAGE</string>
+    <string name="product_name">PRODUCT NAME</string>
+    <string name="product_price">PRODUCT PRICE</string>
+
+    <string name="category_image">CATEGORY IMAGE</string>
+    <string name="category_name">CATEGORY NAME</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
