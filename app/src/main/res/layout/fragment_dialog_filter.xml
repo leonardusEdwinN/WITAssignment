@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarFilter"
+        app:titleTextColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <ImageButton
+            android:background="@android:color/white"
+            android:id="@+id/btnCloseFilter"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_close_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_titleFragmentSort"
+            android:textSize="24sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Harga"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtRangePrice"
+            android:background="@drawable/rounded_filter"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Rp 0 - Rp 500.000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+            android:id="@+id/bar_range_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:corner_radius="10"
+            app:min_value="0"
+            app:max_value="500000"
+            app:gap="1"
+            app:bar_color="#8990C4"
+            app:bar_highlight_color="#2434AD"
+            app:left_thumb_color="#1A246D"
+            app:right_thumb_color="#1A246D"
+            app:left_thumb_color_pressed="#030B47"
+            app:right_thumb_color_pressed="#030B47"/>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textMin1"
+                android:text="Left"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textMax1"
+                android:text="Right"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Tag"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtRSCH"
+                android:text="RSCH"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtMale"
+                android:text="MALE"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtNavy"
+                android:text="NAVY"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtBlue"
+                android:text="BLUE"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtRed"
+                android:text="RED"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtAngs"
+                android:text="ANGS"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtIngs"
+                android:text="INGS"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtSot"
+                android:text="SOT"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="Filter"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:id="@+id/btnFilter"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modules.productdetail.ProductDetailActivity">
+
+
+    <ss.com.bannerslider.Slider
+        android:id="@+id/sliderProductDetail"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ss.com.bannerslider.Slider>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:src="@drawable/ic_back"
+        android:background="@drawable/ripple_button"
+        android:padding="16dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_productNameDetail"
+        android:layout_below="@id/sliderProductDetail"
+        android:textSize="16sp"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Detail Name"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/txt_productNameDetail"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtPriceDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Price Detail Price"/>
+
+        <TextView
+            android:id="@+id/txtDiscountPriceDetail"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:text="Discount Detail Price"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtCount"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:textFontWeight="2"
+            android:background="@drawable/border"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="15dp"/>
+        <Button
+            android:id="@+id/btnAddtoBag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/txtCount"
+            android:layout_margin="20dp"
+            android:background="@color/colorBlue"
+            android:padding="15dp"
+            android:text="ADD TO BAG"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

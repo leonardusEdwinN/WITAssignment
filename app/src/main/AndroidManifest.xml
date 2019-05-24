@@ -11,15 +11,16 @@
         android:roundIcon="@mipmap/splash_screen"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Modules.Product.ProductActivity"></activity>
-        <activity android:name=".Modules.SplashScreen.SplashScreen">
+        <activity android:name=".modules.productdetail.ProductDetailActivity"></activity>
+        <activity android:name=".modules.product.ProductActivity" />
+        <activity android:name=".modules.splashscreen.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Modules.MainActivity"></activity>
+        <activity android:name=".modules.MainActivity" />
     </application>
 
 </manifest>

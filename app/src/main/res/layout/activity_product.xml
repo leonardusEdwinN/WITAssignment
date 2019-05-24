@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Modules.Product.ProductActivity">
+    tools:context=".modules.product.ProductActivity"
+    android:layout_gravity="bottom">
 
-</android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@android:color/black"
+            android:layout_alignParentTop="true"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:id="@+id/txtToolBar"
+                android:textSize="36sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="App_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+        </android.support.v7.widget.Toolbar>
+
+        <com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="10dp"
+            app:srl_direction="both">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+
+</RelativeLayout>
